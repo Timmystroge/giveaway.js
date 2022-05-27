@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praise GiveAway 😂</title>
+    <style>
+        body{
+            background: #000;
+        }
+        h2 {
+            margin-bottom: 30px;
+        }
+        
+        p,
+        h2 {
+            font-family: calibri;
+            color: white;
+        }
+        hr{ 
+            background: transparent;
+            border: none;
+        }
+        .container {
+            width: 300px;
+            background: #0a44b9;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 30px 20px;
+            border-radius: 5px;
+        }
+        input[type=text],
+        input[type=email]{
+            width: 90%;
+            height: 30px;
+            outline: none;
+            border: none;
+            padding:5px 10px;
+            background: white;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 30px;
+            border: none;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Praise Giveaway 😎</h2>
+        <form method="post" class="form" >
+            <input type="email" name="email" placeholder="Email">
+                                  <hr>
+            <input type="text" name="name" placeholder="Name">
+                                  <hr>
+            <input type="text" name="amount" placeholder="Amount">
+            <p class="feedback"></p>
+            <button type="submit"><b>Try</b></button>
+        </form>
+    </div>
+    <!-- // js Script   -->
+    <script src="main.js"></script>
+</body>
+</html>
