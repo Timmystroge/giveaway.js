@@ -2,7 +2,16 @@ const form = document.querySelector('.form');
 const feedback = document.querySelector('.feedback');
 const button = document.querySelector('button');
 const giveAwayPrice = 1000;
+const emailInput = document.querySelector('#email');
 
+// ---- 😎
+emailInput.addEventListener('keyup', e => {
+  if(!emailInput.value.includes('@')){
+    emailInput.setAttribute('class', 'error');
+  } else {
+    emailInput.setAttribute('class', 'success');
+  }
+});
 // ---- 😎
 form.addEventListener('submit', e => {
     e.preventDefault();  // prevents form from submmiting || refreshing the page
@@ -51,7 +60,7 @@ form.addEventListener('submit', e => {
             setTimeout(() => {
                 feedback.textContent = `=> Please Wait ✋`;
                 setTimeout(() => {
-                    feedback.textContent = `=> ${userInputName}, Your are Number ${randomNumber} and you can only win ${userInputAmount} if you are Number 1, Sorry!😪`;
+                    feedback.textContent = `=> ${userInputName}, Your are Number ${randomNumber} and you can only win NGN ${userInputAmount} if you are Number 1, Sorry!😪`;
                       setTimeout(() => {
                           document.location.reload();
                       }, 5000);
